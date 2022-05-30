@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/img/Joystick-PNG-Photo-Clip-Art-Image-removebg-preview.png">
+  <title>GiftInGame</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/fc7fce5b23.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <canvas id="canvas"></canvas>
+
+  <div class="container">
+    <form id="game" name='sign'>
+      <h1 class="titre">GiG<br>Inscription</h1>
+      <div class="form-field">
+        <i class="fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <label for="name">Votre nom:</label>
+        <input type="text" name="name" id="name">
+
+        <small></small>
+      </div>
+      <div class="form-field">
+        <i class="fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <label for="username">Votre prénom:</label>
+        <input type="text" name="username" id="username" autocomplete="off">
+        <small></small>
+      </div>
+
+      <div class="form-field">
+        <i class="fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <label for="pseudo">Votre nom d'utilisateur:</label>
+        <input type="text" name="pseudo" id="pseudo" autocomplete="off">
+        <small></small>
+      </div>
+
+      <div class="form-field">
+        <i class="fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <label for="email">Votre adresse mail:</label>
+        <input type="text" name="email" id="email" autocomplete="off">
+        <small></small>
+      </div>
+
+      <div class="form-field">
+        <i class="fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <label for="password">Votre mot de passe:</label>
+        <input type="password" name="password" id="password" autocomplete="off">
+        <small></small>
+      </div>
+
+      <div class="form-field">
+        <i class="fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <label for="passwordC">Confirmez votre mot de passe:</label>
+        <input type="password" name="passwordC" id="passwordC" autocomplete="off">
+        <small></small>
+      </div>
+
+
+   <!-- Montrer Mot de Passe -->
+   <div class="show">  <input type="checkbox" id="mdp" onclick="Afficher()">
+        <label for="mdp"><span class="see"><i>Afficher le mot de passe</i></span> </label></div>
+      
+      <div class="genres">
+        <p class="txt">Homme</p> <input type="radio" name="genre" id="genre" value="homme"/>
+        <p class="txt">Femme</p><input type="radio" name="genre" id="genre" value="femme"/>
+      </div>
+
+      <div class="form-field">
+        <p class="txt">Date de naissance:</p>
+        <input name="date" id="date" type="date" placeholder="JJ/MM/AAAA">
+        <label for="naiss"></label>
+        <small></small>
+      </div>
+
+
+
+
+      <div class="click">
+        <input type="image" src="/img/Joystick-PNG-Photo-Clip-Art-Image-removebg-preview.png" alt="submit" class="btn">
+        <p class="rgt">S'enregistrer</p>
+      </div>
+      <img src="/img/arrow-removebg-preview.png" class="arrow" alt="sub">
+    </form>
+  </div>
+
+  <canvas id="canvas2"></canvas>
+  <!-- Montrer Mot de Passe -->
+  <script>
+    function Afficher() {
+      var input = document.getElementById("password");
+      var input1 = document.getElementById("passwordC");
+      if (input.type === "password" && input1.type === "password") {
+        input.type = "text";
+        input1.type = "text";
+      }
+      else {
+        input.type = "password";
+        input1.type = "password";
+      }
+    }
+
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>

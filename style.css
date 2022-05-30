@@ -1,0 +1,172 @@
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'URW Gothic', Arial, sans-serif;
+    font-variant: small-caps;
+    font-size: 16px;
+    background-color: #fcf969;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 12px 5px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    }
+
+.form-field {
+    padding-left: 100px;
+    margin-bottom: 5px;
+}
+
+.form-field label {
+    display: block;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.form-field input,
+.form-field select {
+    border: solid 2px #c090d6;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 80%;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+.form-field small {
+    color: var(--error-color);
+}
+
+/* Icone champ */
+
+
+.form-field > i {
+margin-left:340px;
+margin-top: 35px;
+position: absolute;
+visibility: hidden;
+} 
+
+.form-field.success > i.fa-circle-check {
+color: var(--success-color);
+visibility: visible;
+}
+
+.form-field.error > i.fa-circle-exclamation {
+    color: var(--error-color);
+    visibility: visible;
+    }
+
+/* Bouton */
+
+.btn {
+    display: block;
+    width: 100px;
+    margin: auto;
+}
+
+.btn:hover {
+transform: translateY(3px);
+border-radius: 20px;
+box-shadow: 1px 1px 1px 1px rgb(53, 54, 54);
+}
+
+.btn:active {
+    transform: translate(0px);
+}
+
+.click {
+    text-align: center;
+}
+
+.rgt {
+    margin-top: 1px;
+    font-size: 15px;
+}
+
+.arrow {
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 70px;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    height: 1px;
+    width: 1px;
+    border: solid 2px #c090d6;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+}
+
+input[type=checkbox]:checked {
+    background-image: url(/img/png-clipart-human-eye-symbol-third-eye-eye-clinic-text-logo-thumbnail.png);
+    background-position: center;
+    background-size: 100%;
+}
+
+.show {
+margin-left:97px;
+}
+
+
+.see {
+    font-size: 10px;
+}
+
+.txt {
+color: #777;
+}
+
+.genres {
+margin-left: 100px;
+display: flex;
+align-items: center;
+}
+
+.genres > input {
+margin-left: 10px;
+margin-right: 50px;
+}
