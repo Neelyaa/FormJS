@@ -306,7 +306,7 @@ var canvas = document.getElementById("canvas"),
     context = canvas.getContext("2d");
 var sprites = new Image();
 sprites.onload = animate;
-sprites.src = "/img/shell.png";
+sprites.src = "img/shell.png";
 
 
 canvas.width = width * ratio;

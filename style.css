@@ -142,7 +142,7 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked {
-    background-image: url(/img/png-clipart-human-eye-symbol-third-eye-eye-clinic-text-logo-thumbnail.png);
+    background-image: url(img/png-clipart-human-eye-symbol-third-eye-eye-clinic-text-logo-thumbnail.png);
     background-position: center;
     background-size: 100%;
 }
